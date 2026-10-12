@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>VERTEX</title>
+<meta name="ad.size" content="width=300,height=250">
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script type="text/javascript">
+  const links = {
+    main_link: 'https://www.journavxhcp.com/coverage-finder',
+    full_prescribing_information_sticky: 'https://pi.vrtx.com/files/uspi_suzetrigine.pdf',
+    prescribing_information_isi: 'https://pi.vrtx.com/files/uspi_suzetrigine.pdf',
+  }
+</script>
+<style>
+/*--CSS start here--*/
+* { margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+img { border: 0; vertical-align: top; }
+
+body[class='160x600'] br[class]:not([class='160x600']),
+body[class='300x250'] br[class]:not([class='300x250']),
+body[class='300x600'] br[class]:not([class='300x600']),
+body[class='970x250'] br[class]:not([class='970x250']),
+body[class='728x90'] br[class]:not([class='728x90']) { display: none; }
+
+/* global */
+.banner { background:#2b034d; margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; position: relative; width: 300px; height: 250px; overflow: hidden; border:1px solid #000; user-select: none; -webkit-user-select: none; opacity: 0; }
+.all_frame { width: 100%; height: 100%; left: 0; top: 0; position: absolute; }
+.ss { left: -1px; top: -1px; }
+.ss img { max-width: 300px; }
+#main_link > * { opacity: 0; }
+#main_link div { position: absolute; }
+#main_link { left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; cursor: pointer; }
+
+#main_link .pattern_layer { position: absolute; width: 791px; height: 115px; }
+#main_link .pattern_layer img { max-width: 791px; }
+#main_link .f1_pattern_layer { left: 156px; top: -62px; }
+#main_link .f2_pattern_layer_main { left: 121px; top: 105px; overflow: hidden; }
+#main_link .f3_pattern_layer_main { left: 141px; top: -55px; overflow: hidden; }
+#main_link .f2_pattern_layer, #main_link .f3_pattern_layer { left: -110px; top: 0px; }
+
+/* layout */
+.slider_box { display: block; width: 100%; height: 100%; background: #2B034D; }
+.slider_box .isiBody { width: 100%; display: block; padding: 19px 0px 8px 0px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.isi { left: 0; bottom: 0; width: 100%; height: 79px; background: #60579E; position: absolute; z-index: 99; transition: 0.5s ease-in-out; -webkit-transition: 0.5s ease-in-out; }
+.isi .toggle_btn { width: 14px; height: 14px; right: 0px; top: 0px; position: sticky !important; cursor: pointer; z-index: 9999; }
+.banner.active .isi { height:100%; }
+.banner.active .isi .toggle_btn:after { content: '–'; top: 1px; }
+
+/* typography */
+.isi .isiFix_top {cursor: auto; position: absolute !important; background-color: #efeff1; top: 0; left: 0; width: 100%; z-index: 999; display: flex; justify-content: space-between; align-items: center; text-align: left; }
+.isi .isiFix_top img { max-width: 300px; }
+
+.isi .full_isi_img { left: 0px; top: 0px; width: 100%; position: relative;}
+.isi .full_isi_img img { max-width: 300px; pointer-events: none; }
+.isi .isiFix_bottom { cursor: auto; position: absolute !important; background-color: #efeff1; bottom: 0; left: 0; width: 100%; height: 14px; z-index: 999; display: flex; justify-content: space-between; align-items: center; text-align: left; }
+.isi .isi_bottom_fixed { left: 13px; top: 4px; position: absolute; }
+.isi .isiFix_bottom img { max-width: 95px; }
+.isi .cursor_link { cursor: pointer; }
+.isi .prescribing_information_isi { left: 94px; bottom: 182px; position: absolute; width: 130px; height: 14px; opacity: 0; }
+/*--CSS end here--*/
+</style>
+</head>
+<body class="300x250">
+  <!--Banner start here-->
+  <div class="banner">
+    <div class="all_frame">
+      <div id="main_link" onclick="javascript:window.open(window.clickTag1)">
+        <div class="f1_pattern_layer pattern_layer"><img data-src="pattern_layer.png" title="" alt="" /></div>
+        <div class="f2_pattern_layer_main pattern_layer"><div class="f2_pattern_layer"><img data-src="pattern_layer.png" title="" alt="" /></div></div>
+        <div class="f3_pattern_layer_main pattern_layer"><div class="f3_pattern_layer"><img data-src="pattern_layer.png" title="" alt="" /></div></div>        
+        <div class="f1_img ss"><img data-src="f1_img.png" title="" alt="" /></div>
+        <div class="f1_logo ss"><img data-src="f1_logo.png" title="" alt="" /></div>
+        <div class="f1_text_1 ss"><img data-src="f1_text_1.png" title="" alt="" /></div>
+        <div class="f2_text_1 ss"><img data-src="f2_text_1.png" title="" alt="" /></div>
+        <div class="f2_footnote ss"><img data-src="f2_footnote.png" title="" alt="" /></div>
+        <div class="f3_img ss"><img data-src="f3_img.png" title="" alt="" /></div>
+        <div class="f3_logo ss"><img data-src="f3_logo.png" title="" alt="" /></div>
+        <div class="f3_text_1 ss"><img data-src="f3_text_1.png" title="" alt="" /></div>
+        <div class="cta ss"><img data-src="cta.png" title="" alt="" /></div>        
+      </div>
+  </div>
+  <div class="isi" id="isi">
+    <div class="isiFix_bottom">
+      <div class="isi_bottom_fixed cursor_link" id="full_prescribing_information_sticky" onclick="javascript:window.open(window.clickTag2)"><img data-src="isi_bottom_fixed.png" title="" alt="" /></div>
+    </div>
+    <div class="isiFix_top">
+      <div class="isi_top_fixed"><img data-src="isi_top_fixed.jpg" title="" alt="" /></div>
+    </div>
+    <div class="slider_box main scroll">
+      <div class="isiBody">
+        <div class="full_isi_img">
+          <img data-src="isi_full.png" title="" alt="" />
+          <div class="prescribing_information_isi cursor_link" id="prescribing_information_isi" onclick="javascript:window.open(window.clickTag3)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Banner end here-->
+
+<!-- ********** GLOBAL ISI JS ********** -->
+<script>
+  const Scroll = ({
+    event = 'animationEnd webkitAnimationEnd mozAnimationEnd',
+    on,
+    slider = 8,
+    color = 'rgba(148,142,190,1)',
+    track = '#2D1C66',
+    curve = '50px',
+    arrow,
+    delay,
+    speed,
+    stopOnMove = true,
+    stopOnClick = false,
+  }) => {
+    let sBox = document.querySelector('.main')
+    if (!sBox) return setTimeout(Scroll, 100, { event, on, slider, color, track, curve, arrow, delay, speed })
+
+    const html = sBox.innerHTML
+    sBox.innerHTML = ''
+    const
+      sBar = sBox.appendChild(document.createElement('b')),
+      sTab = sBar.appendChild(document.createElement('b')),
+      sEl = sBox.appendChild(document.createElement('article'))
+    sEl.id = 'html'
+    start(sEl.innerHTML = html)
+
+    sBar.style.background = track
+    sTab.style.background = color
+    sBar.style.borderRadius = sTab.style.borderRadius = curve
+    let sRatio = sBar.clientHeight / sEl.scrollHeight
+    const
+      ua = navigator.userAgent.toLowerCase(),
+      // safari = ua.indexOf('safari') > -1 && ua.indexOf('chrome') < 0,
+      interval = 1000 / (speed || 1)
+    window.scroll = {
+      draw: () => {
+        let view = sEl.scrollHeight - sEl.offsetHeight
+        if (scroll.end = scroll.end || (sEl.scrollTop >= view)) scroll.stop()
+
+        let h = sEl.offsetHeight * sBar.clientHeight / sEl.scrollHeight
+        const thumb = parseFloat(slider) * (typeof slider === 'string' && slider.endsWith('%') ? sBar.clientHeight / 100 : 1)
+        h = Math.round(h < thumb && thumb < sBar.clientHeight ? thumb : h)
+        sTab.style.height = `${h}px`
+        sRatio = (sBar.clientHeight - h) / view
+        sTab.style.top = `${Math.abs(sEl.scrollTop * sRatio) || 0}px`
+        sBox.classList[sEl.scrollTop > 10 ? 'add' : 'remove']('away')
+      },
+      by: val => sEl.scrollTop += (val || 1),
+      auto: e => {
+        scroll.stop()
+        setTimeout(() => {
+          scroll.id = setInterval(scroll.by, interval)
+          // if (safari) setTimeout(() => scroll.safariId = setInterval(scroll.by, interval), interval / 2)
+        }, delay || 0)
+      },
+      stop: () => {
+        clearInterval(scroll.id)
+        clearInterval(scroll.safariId)
+      }
+    }
+    scroll.draw()
+
+    const when = (el, e, cb, one) => el && e.split(' ').forEach(e => el.addEventListener(e, cb, one && { once: true })) || el
+    when(sBox, 'click', e => e.target.tagName !== 'a' && e.stopPropagation())
+    when(sBox, event, scroll.draw)
+    when(sEl, 'scroll', scroll.draw)
+    when(sEl, `${stopOnClick ? 'click touchstart' : ''} ${stopOnMove ? 'touchmove' : ''} mousewheel DOMMouseScroll`, scroll.stop)
+    when(sBar, 'mousedown', () => when(document, 'mouseup', scroll.stop))
+    if (!event) scroll.auto()
+    else when(document.querySelector(on) || sBox, event, scroll.auto , true)
+    let el = null, elY = 0
+    const at = e => document.all ? window.event.clientY : e.pageY
+    when(sTab, 'mousedown', e => elY = at(e) - (el = e.target).offsetTop)
+    when(document, 'mousemove', e => el !== null && (sEl.scrollTop = (at(e) - elY) / sRatio))
+    when(document, 'mouseup', () => el = stopOnClick && scroll.stop() || null)
+    if (arrow) {
+      const dir = by => e => scroll.by(by)
+      when(sBar.appendChild(document.createElement('i')), 'mousedown', dir(-25))
+      .style.borderColor = `transparent transparent ${arrow}`
+      when(sBar.appendChild(document.createElement('i')), 'mousedown', dir(25))
+      .style.borderColor = `${arrow} transparent transparent`
+    }
+  }
+</script>
+
+<!-- ********** GLOBAL ISI CSS - Scroll ********** -->
+<style>
+/*  .main, div {cursor: pointer;}*/
+  .main div { cursor: default; }
+  .main:not(.bnfy-enter) { max-height: 100%; }
+  .main { box-sizing: border-box; overflow-x: hidden; background-color: #ffffff; }
+  .main * { box-sizing: border-box; }
+  /* .main div, .main img { position: static !important; } */
+  #html { display: block; max-height: 100%; overflow-x: hidden; word-break: break-word; -ms-overflow-style: none; scrollbar-width: none; }
+  #html::-webkit-scrollbar { display: none; }
+  .scroll { margin-right: 12px !important; }
+  .scroll>a { display: block; padding: 6px 0; }
+  .main>b:first-child,
+  .main>b:first-child b { display: block; min-width: 6px; min-height: 7px; border-radius: 0; position: absolute; z-index: 1; }
+  .main>b:first-child { top: 15px; bottom: 15px; right: 0px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+  .main>b:first-child b { cursor: pointer; }
+  .main>b:first-child i { display: block; position: absolute; border-width: 6px; border-style: solid; border-image: initial; margin: -15px -3px; cursor: pointer; z-index: 1; }
+  .main>b:first-child i + i { bottom: 0; }
+</style>
+
+<!-- ********** GLOBAL ISI CSS ********** -->
+<style>
+  .fpo:after { content: 'FPO'; position: absolute; top: 50%; left: 50%; transform: rotate(-45deg) translate(-50%, -50%); font-size: 32px; transform-origin: left top; font-weight: bold; color: #ff00ff; }
+  .main > *:not(b) { padding: 0 6px !important; }
+  .main .box { padding: 6px !important; border: 1px solid; font-weight: bold; }
+</style>
+
+<!-- ********** BANNER ISI CSS ********** -->
+<style>
+  .main { text-transform: initial; background-color: #ffffff; }
+  .main > *:not(b) { padding: 0 !important; }
+  .main>b:first-child { top: 20px !important; bottom: 0px !important; min-width: 6px; border: 1px solid #c3dcd7; }
+  .main>b:first-child b {min-width: 4px;}
+  .main .pi { position: sticky; top: 0; background-color: #ffffff; margin-top: 0; padding-top: 6px !important; padding-bottom: 6px !important; border-bottom: 1px solid #9a9a9a; }
+</style>
+
+<!-- ********** CUSTOM JS ********** -->
+<script>
+  window.addEventListener('load', () => Promise.all([...document.querySelectorAll('img[data-src]')].map(img => new Promise((res, rej) => {
+    img.onload = res
+    img.src = img.dataset.src
+  }))).then(load))
+
+  if (document.querySelector('.toggle_btn')) {
+    const box = document.querySelector('.banner')
+    document.querySelector('.toggle_btn').addEventListener('click', () => box.classlist.toggle('active'))
+    box.addEventListener('transitionEnd', scroll.draw)
+    box.addEventListener ('mozTransitionEnd', scroll.draw)
+    box.addEventListener ('webkitTransitionEnd', scroll.draw)
+  }
+
+  function animate() {
+    const SPEED = 1
+    // <!--ISI JS - Scroll-->
+    Scroll({
+      event: 'animationComplete', // auto scroll on these events
+      on: 'body', // auto scroll on above events on this element (default: on: '.main')
+      // arrow: '#0000ff', // scroll arrow
+      // slider: '36px', // scroll slider minimum height
+      // color: '#948EBE', // scroll slider color
+      // track: '#2D1C66', // scroll slider background
+      // curve: '0', // scroll slider curve `50px` or `30px 0 30px 0`
+      delay: 1500, // in milliseconds 1000ms = 1s
+      speed: 15.5 * SPEED,
+      // stopOnMove: false
+      // stopOnClick: true
+    })
+
+    // <!--GSAP JS start here-->
+    //--------------- SET -----------------
+    gsap.set(".banner", { display: 'block', opacity: 1 });
+    //---------- Animation Event ------------
+    const animationComplete = new CustomEvent('animationComplete')
+    //---------- ADD ANIMATION ------------
+
+    gsap.timeline({
+      delay: 0.5,
+      defaults: {
+        duration: 0.5,
+        ease: 'none'
+      },
+      onComplete: () => document.body.dispatchEvent(animationComplete),
+    })
+    .timeScale(SPEED)
+
+    //=========================
+
+      .add('Scene1', '+=0.1')
+      .to('.f1_logo', { opacity: 1, duration: 0.5, delay: 0.1, ease: Power1.Out }, 'Scene1')
+      .fromTo('.f1_text_1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5, ease: Power1.Out }, 'Scene1')
+      .fromTo('.f1_img', { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5, ease: Power1.Out }, 'Scene1')
+      .fromTo('.f1_pattern_layer', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 0.5, delay: 1, ease: Power1.Out }, 'Scene1')
+      .to('.f1_logo, .f1_text_1, .f1_img', { opacity: 0, duration: 0.5, delay: 5, ease: Power1.Out }, 'Scene1')
+      .to('.f1_pattern_layer', { opacity: 0, x: -200, duration: 0.5, delay: 5, ease: Power1.Out }, 'Scene1')
+      
+      .add('Scene2', 'Scene1+=5.5')
+      .fromTo('.f2_text_1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.1, ease: Power1.Out }, 'Scene2')
+      .fromTo('.f2_footnote', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5, ease: Power1.Out }, 'Scene2')
+      .fromTo('.f2_pattern_layer_main', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 0.5, delay: 1, ease: Power1.Out }, 'Scene2')
+      .to('.f2_text_1, .f2_footnote', { opacity: 0, duration: 0.5, delay: 6, ease: Power1.Out }, 'Scene2')
+      .to('.f2_pattern_layer_main', { opacity: 0, x: -200, duration: 0.5, delay: 6, ease: Power1.Out }, 'Scene2')
+      
+      .add('Scene3', 'Scene2+=6.5')
+      .to('.f3_logo', { opacity: 1, duration: 0.5, delay: 0.1, ease: Power1.Out }, 'Scene3')
+      .fromTo('.f3_text_1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5, ease: Power1.Out }, 'Scene3')
+      .fromTo('.f3_img', { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5, ease: Power1.Out }, 'Scene3')
+      .to('.cta', { opacity: 1, duration: 0.5, delay: 1, ease: Power1.Out }, 'Scene3')
+      .fromTo('.f3_pattern_layer_main', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 0.5, delay: 1, ease: Power1.Out }, 'Scene3')
+      
+    //-------------------------------------
+    // <!--GSAP JS end here-->
+  }
+</script>
+<!-- -->
+<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+<script>
+  document.getElementById('main_link').removeAttribute('onclick')
+  document.getElementById('full_prescribing_information_sticky').removeAttribute('onclick')
+  document.getElementById('prescribing_information_isi').removeAttribute('onclick')
+
+  function main_link (e) {
+    Enabler.exit('main_link', links.main_link)
+  }
+  function full_prescribing_information_sticky (e) {
+    Enabler.exit('full_prescribing_information_sticky', links.full_prescribing_information_sticky)
+  }
+  function prescribing_information_isi (e) {
+    Enabler.exit('prescribing_information_isi', links.prescribing_information_isi)
+  }
+  function start() {
+    document.getElementById('main_link').removeEventListener('click', main_link, false)
+    document.getElementById('main_link').addEventListener('click', main_link, false)
+
+    document.getElementById('full_prescribing_information_sticky').removeEventListener('click', full_prescribing_information_sticky, false)
+    document.getElementById('full_prescribing_information_sticky').addEventListener('click', full_prescribing_information_sticky, false)
+
+    document.getElementById('prescribing_information_isi').removeEventListener('click', prescribing_information_isi, false)
+    document.getElementById('prescribing_information_isi').addEventListener('click', prescribing_information_isi, false)
+  }
+  function init() {
+    Enabler.isVisible() ? start() : Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, start)
+  }
+  function load() {
+    Enabler.isInitialized() ? init() : Enabler.addEventListener(studio.events.StudioEvent.INIT, init)
+    animate()
+  }
+</script>
+<!--
+<script>
+  var clickTag1 = links.main_link
+  var clickTag2 = links.full_prescribing_information_sticky
+  var clickTag3 = links.prescribing_information_isi
+
+  // for `start(sEl.innerHTML = html)`
+  function start() {}
+
+  function load() {
+    animate()
+  }
+</script>
+<!-- -->
+
+<!-- Custom -->
+<style>
+  .main>b:first-child { border: none !important; top: 25px !important; bottom: 25px !important; right: 9px; border-radius: 4px !important; z-index: 999; min-width: 3px; background: #EFEFF0!important;}
+  .main>b:first-child b { min-width: 3px; border-radius: 0px !important; }
+  .main {background-color: #FFFFFF;}
+  .main>b:first-child b { background: #969696!important; border-radius: 0 !important; min-width: 3px; min-height: 14px !important; }
+</style>
+
+</body>
+</html>

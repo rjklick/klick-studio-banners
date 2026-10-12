@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Klick</title>
+<meta name="ad.size" content="width=728,height=90">
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script type="text/javascript">
+  const links = {
+    main_link: 'https://www.journavxhcp.com?utm_campaign=b12d_a23w_p12_mul43&utm_content=us-43-2500028_ab12&utm_source=h1o3&utm_medium=email&utm_term=register-now-static&unique_id_value=%%subscriberid%%',
+  }
+</script>
+<style>
+/*--CSS start here--*/
+* { margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+img { border: 0; vertical-align: top; }
+
+/* global */
+.banner { background-color: #ffffff; margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; position: relative; width: 728px; height: 90px; overflow: hidden; border:1px solid #000;user-select: none; -webkit-user-select: none;}
+.all_frame, .bg_main { width: 100%; height: 100%; left: 0; top: 0; position: absolute; }
+#main_link div { position: absolute; }
+#main_link { left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; cursor: pointer; }
+.ss { left: -1px; top: -1px; }
+.ss img { max-width: 728px; }
+
+/*--CSS end here--*/
+</style>
+</head>
+<body>
+<!--Banner start here-->
+<div class="banner">
+  <div class="all_frame">
+    <div class="ss" id="main_link" onclick="javascript:window.open(window.clickTag1)">
+      <img data-src="main_bg.jpg" title="" alt="" />
+      </div>
+  </div>
+</div>
+<!--Banner end here-->
+
+<!-- ********** CUSTOM JS ********** -->
+<script>
+  window.addEventListener('load', () => Promise.all([...document.querySelectorAll('img[data-src]')].map(img => new Promise((res, rej) => {
+    img.onload = res
+    img.src = img.dataset.src
+  }))).then(load))
+</script>
+<!-- -->
+<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+<script>
+  document.getElementById('main_link').removeAttribute('onclick')
+
+  function start() {
+    document.getElementById('main_link').addEventListener('click', function (e) {
+      Enabler.exit('main_link', links.main_link)
+    }, false)
+  }
+  function init() {
+    Enabler.isVisible() ? start() : Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, start)
+  }
+  function load() {
+    Enabler.isInitialized() ? init() : Enabler.addEventListener(studio.events.StudioEvent.INIT, init)
+  }
+</script>
+<!--
+<script>
+var clickTag1 = links.main_link
+</script>
+<!--  -->
+
+</body>
+</html>
